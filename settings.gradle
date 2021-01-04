@@ -1,0 +1,3 @@
+include ':toast_wwy'
+include ':app'
+rootProject.name = "MyNewTest"

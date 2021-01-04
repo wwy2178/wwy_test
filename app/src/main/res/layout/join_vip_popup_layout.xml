@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/bg_top_10_fff">
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成为会员"
+        android:textSize="16sp"
+        android:textColor="#2a2a30"
+        android:drawableRight="@drawable/svg_close_img"
+        android:layout_marginTop="19dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2a2a30"
+        android:textSize="14sp"
+        android:text="无限转写时长"
+        android:layout_marginTop="23dp"
+        android:drawableLeft="@drawable/svg_along_time_icon"
+        android:drawablePadding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2a2a30"
+        android:textSize="14sp"
+        android:text="任意导入录音文件"
+        android:layout_marginTop="23dp"
+        android:drawableLeft="@drawable/svg_along_time_icon"
+        android:drawablePadding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2a2a30"
+        android:textSize="14sp"
+        android:text="多语言、多场景支持"
+        android:layout_marginTop="23dp"
+        android:drawableLeft="@drawable/svg_more_language_support_icon"
+        android:drawablePadding="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="130dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_5_d9a24e_1">
+
+            <TextView
+                android:id="@+id/mouthTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2a2a30"
+                android:text="月度会员"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mouthTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textSize="15sp"
+                    android:textColor="#D9A34E"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D9A34E"
+                    android:text="30"
+                    android:textSize="27sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_half_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="130dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/bg_5_e5e5e5_boder_1_fff">
+
+            <TextView
+                android:id="@+id/halfYearTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2a2a30"
+                android:text="半年会员"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/privceHalfYearLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/halfYearTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textSize="15sp"
+                    android:textColor="#D9A34E"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D9A34E"
+                    android:text="130"
+                    android:textSize="27sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:text="￥21.67/月"
+                android:textColor="#A7A7A7"
+                android:layout_below="@+id/privceHalfYearLL"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_all_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="130dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/bg_5_e5e5e5_boder_1_fff">
+
+            <TextView
+                android:id="@+id/yearTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2a2a30"
+                android:text="年度会员"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/allYearLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/yearTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textSize="15sp"
+                    android:textColor="#D9A34E"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D9A34E"
+                    android:text="200"
+                    android:textSize="27sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:text="￥16.67/月"
+                android:textColor="#A7A7A7"
+                android:layout_below="@+id/allYearLL"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWxPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_30_f6f7f9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="13dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2A2A30"
+            android:textSize="14sp"
+            android:text="微信支付"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/svg_wx_pay_icon"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

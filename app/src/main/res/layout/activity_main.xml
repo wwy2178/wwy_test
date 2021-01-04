@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="55dp">
+
+        <com.example.mynewtest.CircleImageView
+            android:id="@+id/userHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            app:border_color="@color/color_2a2a30"
+            app:border_width="1dp"
+            android:background="@drawable/bg_23_00ca0c"/>
+
+        <TextView
+            android:id="@+id/userNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/color_2a2a30"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:text="moon"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/bg_10_232539_353a52">
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_eac486"
+                android:drawableTop="@drawable/svg_along_time_eac486_icon"
+                android:gravity="center_horizontal"
+                android:drawablePadding="9dp"
+                android:text="无限转写时长"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_eac486"
+                android:drawableTop="@drawable/svg_along_time_eac486_icon"
+                android:gravity="center_horizontal"
+                android:drawablePadding="9dp"
+                android:text="任意导入录音"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_eac486"
+                android:drawableTop="@drawable/svg_more_language_support_eac486_icon"
+                android:gravity="center_horizontal"
+                android:drawablePadding="9dp"
+                android:text="多语言支持"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/llMenu"
+            android:layout_marginTop="14sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/color_efd19b"/>
+
+        <TextView
+            android:id="@+id/tvGoVip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_f7edd7_e9ce93"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view"
+            android:textColor="@color/color_2d3147"
+            android:layout_marginRight="14dp"
+            android:text="成为会员"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:onClick="showBtn"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

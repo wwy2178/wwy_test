@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_10_ffffff"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="19dp">
+
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/svg_close_img" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="通过微信登录"
+            android:textColor="#2a2a30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wxLoginTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_23_00ca0c"
+            android:gravity="center"
+            android:text="登录微信"
+            android:textColor="@color/_xpopup_light_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/xyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wxLoginTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="登录即代表同意用户协议与隐私政策"
+            android:textColor="#999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>
